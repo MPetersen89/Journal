@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang=en>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="src/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="src/styles.css" rel="stylesheet" type="text/css">
+    <script src="src/jquery-3.5.1.js"></script>
+    <!-- <script src="src/main.js"></script> -->
+    <script type="text/javascript" src="bundle.js"></script>
+    <title>Journal</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Write a Journal Entry</h1>
+      <form id="entry">
+        <div class="form-group">
+          <label for="title">Enter a title:</label>
+          <input id="title" type="text">
+        </div>
+        <div class="form-group">
+          <label for="body">Write your entry here:</label>
+          <textarea id="body" class="form-control" rows="5"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+      <div id="output"></div>
+    </div>
+  </body>
+</html>
